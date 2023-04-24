@@ -25,10 +25,10 @@ FROM node:18-alpine
 # Make /app as working directory
 WORKDIR /app
 
-# Copy dist folder from build stage to nginx public folder
+# Copy dist folder, server.js and node_modules from build stage
 COPY --from=builder /app/dist /app/dist
 COPY --from=builder /app/server.js /app/server.js
 COPY --from=builder /app/node_modules /app/node_modules
 
-# Start NgInx services
+# Start Node services
 CMD node /app/server.js
