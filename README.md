@@ -1,7 +1,6 @@
-# Angular base project created in v16
+# Angular NodeJS with Docker
 
-This project acts as base project for all v16 Angular projects. It contains all the necessary dependencies and
-configurations to start a new project.
+A sample project to demonstrate how to deploy Angular on NodeJS (Docker)
 
 1. Esbuild (vite)
 2. Standalone components
