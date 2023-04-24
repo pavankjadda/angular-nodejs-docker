@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-v16-base": {
+    "angular-nodejs-docker": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -42,7 +42,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser-esbuild",
           "options": {
-            "outputPath": "dist/angular-v16-base",
+            "outputPath": "dist/angular-nodejs-docker",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -90,10 +90,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "angular-v16-base:build:production"
+              "browserTarget": "angular-nodejs-docker:build:production"
             },
             "development": {
-              "browserTarget": "angular-v16-base:build:development"
+              "browserTarget": "angular-nodejs-docker:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -101,7 +101,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-v16-base:build"
+            "browserTarget": "angular-nodejs-docker:build"
           }
         },
         "test": {

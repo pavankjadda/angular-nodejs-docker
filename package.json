@@ -1,5 +1,5 @@
 {
-  "name": "angular-v16-base",
+  "name": "angular-nodejs-docker",
   "version": "1.0.0-rc.2",
   "scripts": {
     "ng": "ng",
