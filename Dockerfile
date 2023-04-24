@@ -19,6 +19,9 @@ COPY . .
 ## Build the application
 RUN pnpm build --output-path=dist --output-hashing=all
 
+## Remove dev dependencies
+RUN pnpm install --production=true
+
 ######  Use Node alpine image  ######
 FROM node:18-alpine
 
